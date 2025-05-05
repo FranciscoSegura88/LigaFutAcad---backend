@@ -15,6 +15,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 # --- Usuarios ---
+@app.route('/')
+def hola():
+    return 'Hola, Mundo!'
+
 @app.route('/usuarios', methods=['POST'])
 def crear_usuario():
     data = request.get_json()
