@@ -1,9 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
 
-
-
-from flask_sqlalchemy import SQLAlchemy
-
 db = SQLAlchemy()
 
 class Usuario(db.Model):
@@ -36,4 +32,3 @@ class JugadorPartido(db.Model):
     asistencias = db.Column(db.Integer, default=0)
     tarjetas_amarillas = db.Column(db.Integer, default=0)
     tarjetas_rojas = db.Column(db.Integer, default=0)
-``
